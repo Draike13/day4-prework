@@ -8,9 +8,12 @@
     <script src="practice4.js"></script>
   </head>
   <body>
-    <input type="number" id="price" />
-    <input type="number" id="discount" />
-    <input type="number" id="tax" />
+    <form onsubmit="setNumbers(); return false">
+      <input type="number" id="price" />
+      <input type="text" step=".01" id="discount" />
+      <input type="text" step=".01" id="tax" />
+      <button type="submit">submit</button>
+    </form>
     <button onclick="finalPrice()">show price</button>
   </body>
 </html>

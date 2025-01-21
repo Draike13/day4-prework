@@ -1,6 +1,12 @@
-let price = document.getElementById('price');
-let discount = document.getElementById('discount');
-let tax = document.getElementById('tax');
+let price;
+let discount;
+let tax;
+
+function setNumbers() {
+  price = document.getElementById('price').value;
+  discount = document.getElementById('discount').value;
+  tax = document.getElementById('tax').value;
+}
 
 function finalPrice() {
   let discountPrice = price - price * discount;
