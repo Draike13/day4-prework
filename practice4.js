@@ -12,5 +12,5 @@ function setNumbers() {
 function finalPrice() {
   let discountPrice = price - price * discount;
   let finalPrice = discountPrice + discountPrice * tax;
-  console.log(finalPrice);
+  alert(`The final price is ${finalPrice}!`);
 }

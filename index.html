@@ -9,11 +9,15 @@
   </head>
   <body>
     <form id="form" onsubmit="setNumbers(); return false">
-      <input type="number" id="price" />
-      <input type="text" step="number" id="discount" />
-      <input type="text" step="number" id="tax" />
+      <label for="price">Enter price</label>
+      <input name="price" type="number" id="price" />
+      <label for="discount">Enter discount</label>
+      <input name="discount" type="text" step="number" id="discount" />
+      <label for="tax">Enter Tax</label>
+      <input name="tax" type="text" step="number" id="tax" />
       <button type="submit">submit</button>
     </form>
+    <br /><br /><br />
     <button onclick="finalPrice()">show price</button>
   </body>
 </html>
