@@ -6,6 +6,7 @@ function setNumbers() {
   price = document.getElementById('price').value;
   discount = document.getElementById('discount').value;
   tax = document.getElementById('tax').value;
+  document.getElementById('form').reset();
 }
 
 function finalPrice() {

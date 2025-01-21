@@ -8,10 +8,10 @@
     <script src="practice4.js"></script>
   </head>
   <body>
-    <form onsubmit="setNumbers(); return false">
+    <form id="form" onsubmit="setNumbers(); return false">
       <input type="number" id="price" />
-      <input type="text" step=".01" id="discount" />
-      <input type="text" step=".01" id="tax" />
+      <input type="text" step="number" id="discount" />
+      <input type="text" step="number" id="tax" />
       <button type="submit">submit</button>
     </form>
     <button onclick="finalPrice()">show price</button>
