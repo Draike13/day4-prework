@@ -12,5 +12,6 @@ function setNumbers() {
 function finalPrice() {
   let discountPrice = price - price * discount;
   let finalPrice = discountPrice + discountPrice * tax;
-  alert(`The final price is ${finalPrice}!`);
+  let result = finalPrice.toFixed(2);
+  alert(`The final price is ${result}!`);
 }
